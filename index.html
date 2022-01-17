@@ -1,3 +1,5 @@
+{% set test = { test: "test", foo: "bar" } %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,9 +7,11 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
     <div id="app"></div>
+    {{ foo }}
     <script type="module" src="/main.js"></script>
   </body>
 </html>
