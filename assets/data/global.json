@@ -1,3 +1,13 @@
 {
-  "name": "Gioele Bernardi"
+  "name": "Gioele Bernardi",
+  "menu": [
+    {
+      "link": "/",
+      "pageName": "Homepage"
+    },
+    {
+      "link": "/contattami.html",
+      "pageName": "Contattami"
+    }
+  ]
 }

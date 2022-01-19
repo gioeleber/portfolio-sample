@@ -1,0 +1,10 @@
+<header id="main-menu">
+  <a href="/">
+    <img class="logo" src="/assets/img/logo-placeholder.png" alt="" />
+  </a>
+  <ul>
+    {% for item in menu %}
+    <li><a href="{{item.link}}">{{item.pageName}}</a></li>
+    {% endfor %}
+  </ul>
+</header>
