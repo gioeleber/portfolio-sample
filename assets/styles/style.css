@@ -1,6 +1,27 @@
+/* typography */
+@font-face {
+  font-family: "Open Sans";
+  src: url("/assets/font/OpenSans-Regular.ttf") format("ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("/assets/font/OpenSans-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("/assets/font/OpenSans-Italic.ttf") format("ttf");
+  font-weight: 500;
+  font-style: italic;
+}
+
 /* misk */
 body {
   margin: 0;
+  font-family: "Open Sans", sans-serif;
 }
 
 ul {
