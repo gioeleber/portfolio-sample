@@ -1,6 +1,24 @@
 {% extends "templates/layout.html" %} {% block pageTitle %}{{ name }} -
 {{pageTitle}}{% endblock %} {% block main %}
-<section><h1>{{ name }}</h1></section>
-<section><h2>Le mie skill</h2></section>
-<section><h2>Soft skills</h2></section>
+<section class="presentation">
+  <div class="wrapper">
+    <div class="row">
+      <div class="col">
+        <h1>{{ name }}</h1>
+        <p>Realizzo interfacce utente a prova di essere umano</p>
+        <a class="btn btn-primary" href="/contattami.html">Contattami</a>
+        <a class="btn" href="/contattami.html">Leggi il mio CV</a>
+      </div>
+      <div class="col">
+        <img
+          class="presentation-img-main"
+          src="/assets/img/gioele-bernardi-photo_550.png"
+          alt="{{ name }}"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+<section class="wrapper skills"><h2>Le mie skill</h2></section>
+<section class="wrapper soft-skills"><h2>Soft skills</h2></section>
 {% endblock %}

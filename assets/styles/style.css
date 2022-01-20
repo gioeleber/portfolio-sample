@@ -1,21 +1,51 @@
+/* viariables */
+:root {
+  --primary: #bbdefb;
+  --primary-transparent: #bbdefb20;
+}
+
 /* typography */
 @font-face {
   font-family: "Open Sans";
-  src: url("/assets/font/OpenSans-Regular.ttf") format("ttf");
+  src: url("/assets/font/OpenSans-Regular.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("/assets/font/OpenSans-Bold.ttf") format("ttf");
-  font-weight: 700;
+  src: url("/assets/font/OpenSans-Bold.ttf") format("truetype");
+  font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("/assets/font/OpenSans-Italic.ttf") format("ttf");
+  src: url("/assets/font/OpenSans-Italic.ttf") format("truetype");
   font-weight: 500;
   font-style: italic;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ul {
+  padding-left: 1rem;
 }
 
 /* misk */
@@ -24,13 +54,36 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-ul {
-  padding-left: 1rem;
-  margin: 0 1rem 0 0;
+.logo-link {
+  display: flex;
 }
 
 .logo {
   height: 2rem;
+}
+
+/* layout */
+.row {
+  display: flex;
+  column-gap: 3rem;
+}
+
+.col {
+  flex: 1;
+}
+
+/* button */
+.btn {
+  background-color: transparent;
+  color: black;
+  border-radius: 0.25rem;
+  padding: 0.8rem 1.5rem;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: var(--primary);
 }
 
 /* header */
@@ -46,6 +99,7 @@ ul {
   display: flex;
   padding-left: 0;
   column-gap: 2rem;
+  margin-bottom: 0;
 }
 
 #main-menu ul li {
@@ -53,9 +107,9 @@ ul {
 }
 
 /* content container */
-main {
-  padding: 0 2rem;
-  margin: 3rem auto;
+.wrapper {
+  padding: 2rem;
+  margin: 0 auto;
   max-width: 80rem;
 }
 
@@ -63,4 +117,17 @@ main {
 #main-footer {
   padding: 1.25rem 2rem;
   background-color: lightgray;
+}
+
+/* 
+ * homepage 
+ */
+.presentation-img-main {
+  display: block;
+  width: 25rem;
+  margin-bottom: -2rem;
+}
+
+.presentation {
+  background-color: var(--primary-transparent);
 }
